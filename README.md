@@ -5,12 +5,12 @@
 
 #### Node16
 
-[]: https://nodejs.org/download/release/v16.19.1/
+[下载Node16.19.1](https://nodejs.org/download/release/v16.19.1/)
 
 #### vue-cli
 
 ```shell
-npm install -g vue-cli
+npm install -g vue-cli # 安装Vue脚手架
 ```
 
 #### Node Module
