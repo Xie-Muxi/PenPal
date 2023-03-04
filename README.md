@@ -5,7 +5,7 @@
 
 #### Node16
 
-[下载Node16.19].(https://nodejs.org/download/release/v16.19.1/)
+[下载Node16.19](https://nodejs.org/download/release/v16.19.1/)
 
 #### vue-cli
 
