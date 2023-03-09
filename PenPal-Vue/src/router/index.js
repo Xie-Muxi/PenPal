@@ -84,6 +84,89 @@ export const constantRoutes = [
     ]
   },
   {
+    path: '/',
+    component: Layout,
+    redirect: '/待审稿',
+    children: [{
+      path: '待审稿',
+      name: '待审稿',
+      component: () => import('../views/待审稿/index'),
+      meta: { title: '待审稿', icon: '待审稿' }
+    }]
+  },
+
+  {
+    path: '/',
+    component: Layout,
+    redirect: '/审稿',
+    children: [{
+      path: '审稿',
+      name: '审稿',
+      component: () => import('../views/审稿/index'),
+      meta: { title: '审稿', icon: '审稿' }
+    }]
+  },
+
+  {
+    path: '/',
+    component: Layout,
+    redirect: '/用户信息修改',
+    children: [{
+      path: '用户信息修改',
+      name: '用户信息修改',
+      component: () => import('../views/用户信息修改/index'),
+      meta: { title: '用户信息修改', icon: '用户信息修改' }
+    }]
+  },
+
+  {
+    path: '/',
+    component: Layout,
+    redirect: '/社区',
+    children: [{
+      path: '社区',
+      name: '社区',
+      component: () => import('../views/社区/index'),
+      meta: { title: '社区', icon: '社区' }
+    }]
+  },
+
+  {
+    path: '/',
+    component: Layout,
+    redirect: '/首页',
+    children: [{
+      path: '首页',
+      name: '首页',
+      component: () => import('../views/首页/index'),
+      meta: { title: '首页', icon: '首页' }
+    }]
+  },
+
+  {
+    path: '/',
+    component: Layout,
+    redirect: '/投稿流程',
+    children: [{
+      path: '投稿流程',
+      name: '投稿流程',
+      component: () => import('../views/投稿流程/index'),
+      meta: { title: '投稿流程', icon: '投稿流程' }
+    }]
+  },
+
+  {
+    path: '/',
+    component: Layout,
+    redirect: '/审稿进度',
+    children: [{
+      path: '审稿进度',
+      name: '审稿进度',
+      component: () => import('../views/审稿进度/index'),
+      meta: { title: '审稿进度', icon: '审稿进度' }
+    }]
+  },
+  {
     path: '/documentation',
     component: Layout,
     children: [
