@@ -1,4 +1,5 @@
 # PenPal
+
 ## 运行前端
 
 ### 所需环境
@@ -6,8 +7,6 @@
 #### Node16
 
 [下载Node16.19.1](https://nodejs.org/download/release/v16.19.1/)
-
-
 
 ## Test
 
@@ -30,5 +29,4 @@ npm install  # 安装所需node包
 npm run dev # 启动
 ```
 
-### mxh
-
+checkma_xh
