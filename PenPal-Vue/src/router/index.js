@@ -73,99 +73,82 @@ export const constantRoutes = [
   {
     path: '/',
     component: Layout,
-    redirect: '/dashboard',
-    children: [
-      {
-        path: 'dashboard',
-        component: () => import('@/views/dashboard/index'),
-        name: 'Dashboard',
-        meta: { title: 'Dashboard', icon: 'dashboard', affix: true }
-      }
-    ]
+    redirect: '/homepage',
+    children: [{
+      path: 'homepage',
+      name: 'homepage',
+      component: () => import('@/views/homepage/index'),
+      meta: { title: '首页', icon: 'dashboard' }
+    }]
   },
   {
     path: '/',
     component: Layout,
-    redirect: '/待审稿',
+    redirect: '/community',
     children: [{
-      path: '待审稿',
-      name: '待审稿',
-      component: () => import('../views/待审稿/index'),
-      meta: { title: '待审稿', icon: '待审稿' }
+      path: 'community',
+      name: 'community',
+      component: () => import('@/views/community/index'),
+      meta: { title: '社区', icon: 'peoples' }
+    }]
+  },
+  {
+    path: '/',
+    component: Layout,
+    redirect: '/submit',
+    children: [{
+      path: 'submit',
+      name: 'submit',
+      component: () => import('@/views/submit/index'),
+      meta: { title: '我的投稿', icon: 'email' }
+    }]
+  },
+  {
+    path: '/',
+    component: Layout,
+    redirect: '/auditWait',
+    children: [{
+      path: 'auditWait',
+      name: 'auditWait',
+      component: () => import('@/views/auditWait/index'),
+      meta: { title: '审稿队列', icon: 'list' }
     }]
   },
 
   {
     path: '/',
     component: Layout,
-    redirect: '/审稿',
+    redirect: '/audit',
     children: [{
-      path: '审稿',
-      name: '审稿',
-      component: () => import('../views/审稿/index'),
-      meta: { title: '审稿', icon: '审稿' }
+      path: 'audit',
+      name: 'audit',
+      component: () => import('@/views/audit/index'),
+      meta: { title: '审稿', icon: 'eye-open' }
     }]
   },
 
   {
     path: '/',
     component: Layout,
-    redirect: '/用户信息修改',
+    redirect: '/userInfo',
     children: [{
-      path: '用户信息修改',
-      name: '用户信息修改',
-      component: () => import('../views/用户信息修改/index'),
-      meta: { title: '用户信息修改', icon: '用户信息修改' }
+      path: 'userInfo',
+      name: 'userInfo',
+      component: () => import('@/views/userInfo/index'),
+      meta: { title: '用户信息', icon: 'user' }
     }]
   },
-
-  {
-    path: '/',
-    component: Layout,
-    redirect: '/社区',
-    children: [{
-      path: '社区',
-      name: '社区',
-      component: () => import('../views/社区/index'),
-      meta: { title: '社区', icon: '社区' }
-    }]
-  },
-
-  {
-    path: '/',
-    component: Layout,
-    redirect: '/首页',
-    children: [{
-      path: '首页',
-      name: '首页',
-      component: () => import('../views/首页/index'),
-      meta: { title: '首页', icon: '首页' }
-    }]
-  },
-
-  {
-    path: '/',
-    component: Layout,
-    redirect: '/投稿流程',
-    children: [{
-      path: '投稿流程',
-      name: '投稿流程',
-      component: () => import('../views/投稿流程/index'),
-      meta: { title: '投稿流程', icon: '投稿流程' }
-    }]
-  },
-
-  {
-    path: '/',
-    component: Layout,
-    redirect: '/审稿进度',
-    children: [{
-      path: '审稿进度',
-      name: '审稿进度',
-      component: () => import('../views/审稿进度/index'),
-      meta: { title: '审稿进度', icon: '审稿进度' }
-    }]
-  },
+  // {
+  //   path: '/',
+  //   component: Layout,
+  //   redirect: '/auditProgress',
+  //   children: [{
+  //     path: 'auditProgress',
+  //     name: 'auditProgress',
+  //     component: () => import('@/views/auditProgress/index'),
+  //     meta: { title: '审稿进度', icon: 'tree-table' }
+  //   }]
+  // },
   {
     path: '/documentation',
     component: Layout,
