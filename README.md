@@ -40,5 +40,3 @@ pnpm i # 安装所需依赖
 ```
 npm run dev 
 ```
-
-checkma_xh
