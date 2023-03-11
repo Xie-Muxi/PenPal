@@ -11,7 +11,7 @@
 #### vue-cli
 
 ```shell
-npm install -g vue-cli # 安装Vue脚手架
+npm install -g @vue/cli # 安装Vue脚手架
 ```
 
 ### 安装 pnpm
